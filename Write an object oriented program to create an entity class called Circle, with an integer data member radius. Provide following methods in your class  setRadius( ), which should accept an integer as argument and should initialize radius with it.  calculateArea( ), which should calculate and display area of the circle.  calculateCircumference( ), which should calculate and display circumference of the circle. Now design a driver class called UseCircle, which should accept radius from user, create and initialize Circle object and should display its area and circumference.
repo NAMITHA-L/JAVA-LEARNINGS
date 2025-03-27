@@ -1,0 +1,30 @@
+class Circle
+{
+    public int radius;
+    public void setradius(int r)
+    {
+        radius = r;
+    }
+    public void calarea()
+    {
+        double area = Math.PI * Math.pow(radius,2);
+        System.out.println(" THE AREA OF THE CICLE WITH RADIUS"+radius
+        +" IS : " + area);
+    }
+    public void calcircumfer ()
+    {
+        double circum = 2 * Math.PI * radius;
+        System.out.println(" THE CIRCUM OF THE CICLE WITH RADIUS"+radius
+        +" IS : " + circum);
+    }
+};
+class Main
+{
+    public static void main (String args[])
+    {
+        Circle c = new Circle();
+        c.setradius(1);
+        c.calarea();
+        c.calcircumfer ();
+    }
+}
